@@ -35,14 +35,14 @@
         background-color:white;
     }
     from{
-        background-color:black;
+        background-color:#F47E7E;
     }
 }
 
 /*CSS Declarations*/
 body{
-    background-color:black;
-    animation: bod 2s ease forwards 3s;
+    background-color: #F47E7E;
+    animation: bod 1.5s ease forwards 3.5s;
 }
 
 
@@ -50,7 +50,7 @@ body{
     width: 100vw;
     height: 40vh;
     background-color: #F47E7E;
-    animation: slideUp 1.5s ease forwards 1.6s;
+    animation: slideUp 1.5s ease forwards 2.5s;
     position: absolute;
     top: 30%;
     left: 0;
