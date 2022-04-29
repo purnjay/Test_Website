@@ -81,12 +81,12 @@ body{
     
     body{
         animation-delay: 3.9s;
-        animation-duration:1.7s;
+        animation-duration: 1.7s;
     }
     
     .title-container {
         height: 20vh;
-        top:40%;
+        top:35%;
     }
     #logo{
         width:60%;
