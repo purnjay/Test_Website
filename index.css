@@ -8,7 +8,7 @@
 
 @keyframes slideUp{
     from{
-        top: 25%;
+        top: 30%;
     }
 
     to{
@@ -30,8 +30,21 @@
         fill:transparent;
     }
 }
+@keyframes bod{
+    to{
+        background-color:white;
+    }
+    from{
+        background-color:black;
+    }
+}
 
 /*CSS Declarations*/
+body{
+    background-color:black;
+    animation: bod 2s ease forwards 3s;
+}
+
 
 .title-container {
     width: 100vw;
@@ -39,7 +52,7 @@
     background-color: #F47E7E;
     animation: slideUp 1.5s ease forwards 1.6s;
     position: absolute;
-    top: 25%;
+    top: 30%;
     left: 0;
 }
 
