@@ -32,7 +32,11 @@
 }
 
 /*CSS Declarations*/
-
+@media only screen and (max-width: 600px) {
+    .title-container {
+      height: 20vh;
+    }
+}
 
 .title-container {
     width: 100vw;
