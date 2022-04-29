@@ -1,0 +1,46 @@
+﻿/*Font Declarations*/
+@font-face{
+    src: url("./fonts/Title.ttf") format('truetype');
+    font-family: "title";
+}
+
+/*Animation declarations*/
+
+@keyframes slideUp{
+    0%{
+        top: 25%;
+    }
+
+    100%{
+        top: 0%;
+    }
+}
+
+
+/*CSS Declarations*/
+
+body
+{
+    font-family: title;
+    font-size: 4vw;
+}
+
+.title-container {
+    position: absolute;
+    top: 25%;
+    left: 0;
+    background-color: black;
+    height: auto;
+    width: 100%;
+    overflow: hidden;
+    color: white;
+    animation: slideUp;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+}
+
+.title-container h1{
+    position:relative;
+    left:30%;
+}
+
