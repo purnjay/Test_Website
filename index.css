@@ -116,7 +116,7 @@ body{
     transform: translate(0%,-50%);
 }
 
-@media only screen and (max-width: 800px) {
+@media only screen and (max-width: 600px) {
     
     body{
         animation-delay: 3.9s;
@@ -139,7 +139,7 @@ body{
         margin-top: 0;
         margin-left: 12vw;
         height: 20vh;
-        transform:translateY(-50%);
+        transform:translateY(-35%);
     }
     .icons{
         width: 20vw;
