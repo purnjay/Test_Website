@@ -121,6 +121,7 @@ body{
     body{
         animation-delay: 3.9s;
         animation-duration: 1.7s;
+        overflow-x:hidden;
     }
     
     .title-container {
@@ -128,14 +129,20 @@ body{
         top:35%;
     }
     #logo{
-        width:60%;
-        height:60%;
+        width:70%;
+        height:70%;
     }
     .content-container {
-        grid-template-columns: auto auto auto;
+        grid-template-columns: auto auto;
     }
     .icon-container {
-        margin-top: 0vh;
-        margin-left: 5vw;
+        margin-top: 0;
+        margin-left: 12vw;
+        height: 20vh;
+        transform:translateY(-50%);
+    }
+    .icons{
+        width: 20vw;
+        height: 20vh;
     }
 }
