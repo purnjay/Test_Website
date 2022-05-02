@@ -213,7 +213,7 @@ body{
         grid-template-columns: auto;
     }
     .content-box-container {
-        margin: 20px 0 0 110px;
+        margin: 5vw 0 0 22vw;
     }
 
     @keyframes up {
