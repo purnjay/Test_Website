@@ -48,14 +48,14 @@
 
 /*CSS Declarations*/
 body{
-    background-color: #F47E7E;
+    background-color: grey;
 }
 
 
 .title-container {
     width: 100vw;
     height: 40vh;
-    background-color: #F47E7E;
+    background-color: grey;
     animation: slideUp 1.5s ease forwards 2.5s;
     position: absolute;
     top: 30%;
@@ -88,7 +88,7 @@ body{
 }
 
 .content-container{
-    background-color: #F47E7E;
+    background-color: grey;
     width:100vw;
     height:60vh;
     position: absolute;
@@ -97,9 +97,9 @@ body{
     z-index: 0;
     animation: live 0.5s ease forwards 4s;
     opacity: 0%;
-    /*Placeholder Quanitity*/
     display: grid;
     grid-template-columns: auto auto auto auto auto;
+  
 }
 
 .icon-container{
@@ -115,6 +115,11 @@ body{
     padding: 12px 20px;
     transform: translate(0%,-50%);
 }
+/*Find a solution for this*/
+a:hover path:nth-child(1){
+   animation: fill 1s ease forwards;
+}
+
 
 @media only screen and (max-width: 600px) {
     
