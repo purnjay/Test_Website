@@ -194,7 +194,7 @@ body{
     height: 320px;
     background-color: var(--content-container-bg);
     margin: 20px 0 0 25px;
-    overflow:auto;
+    overflow: auto;
     opacity:0%;
 }
 
@@ -207,13 +207,14 @@ body{
     .main-content-container{
         height:80vh;
         position:absolute;
-        bottom:0;
+        bottom: 0;
     }
     .content-handler{
         grid-template-columns: auto;
-    }
+        justify-content: center;
+   }
     .content-box-container {
-        margin: 5vw 0 0 22vw;
+        
     }
 
     @keyframes up {
