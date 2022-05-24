@@ -5,7 +5,7 @@
     --body-color: #F2E9EA;
     --title-color: #E7DDDB;
     --content-title-color: #27211F;
-    --content-desc-color: #E7DDDB;
+    --content-desc-color: transparent;
 }
 
 @keyframes line-anim {
