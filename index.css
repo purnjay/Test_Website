@@ -1,153 +1,103 @@
-﻿/*Font Declarations*/
-@font-face{
-    src: url("./fonts/Title.ttf") format('truetype');
-    font-family: "title";
+﻿@font-face{
+    src:url("../fonts/VSR.ttf");
+    font-family: VSR;
+}
+@font-face {
+    src: url("../fonts/pacifico.ttf");
+    font-family: pacifico;
 }
 
-/*Animation declarations*/
 
-@keyframes slideUp{
-    
-    to{
-        top: 0%;
-    }
+:root {
+    --top-section: #FFCDBC;
+    --middle-section: #92BFB1;
+    --bottom-section: #FF8966;
 }
 
-@keyframes line-anim{
-    to{
-        stroke-dashoffset: 0;
-    }
+* {
+    box-sizing:border-box;
 }
 
-@keyframes fill {
-    to{
-        fill:white;
-    }
-    from{
-        fill:transparent;
-    }
-}
-
-@keyframes live{
-    to{
-       opacity: 100%;
-    }
-    from{
-       opacity: 0%;
-    }
-}
-
-@keyframes bod{
-    to{
-        background-color:white;
-    }
-    from{
-        background-color:#F47E7E;
-    }
-}
-
-/*CSS Declarations*/
 body{
-    background-color: grey;
+    
 }
 
-
-.title-container {
-    width: 100vw;
-    height: 40vh;
-    background-color: grey;
-    animation: slideUp 1.5s ease forwards 2.5s;
+.top-section {
     position: absolute;
-    top: 30%;
     left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    /*background-image:url("back.jpg");*/
+    background-color: var(--top-section);
+    background-repeat: no-repeat;
 }
 
-#logo{
+.navbar{
+    background-color: transparent;
+    width:100%;
+    height:max-content;
+}
+
+ul{
+    display:flex;
+    flex-direction:row;
+    justify-content:center;
+    column-gap: 3em;
+    font-size: 1.7em;
+    padding: 8px 16px;
+    list-style-type: none;
+}
+
+a{
+    text-decoration:none;
+    color: #d16002;
+    font-family: pacifico;
+    transition: 0.4s;
+}
+
+
+a:hover{
+    color:var(--bottom-section);
+}
+
+.title{
+    background-color: transparent;
+    width: 100%;
+    height: 70%;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    margin:auto auto;
+}
+
+.middle-section {
     position: absolute;
-    top: 50%;
-    left: 50%;
-    transform:translate(-50%,-50%);
-    animation: fill 2s ease forwards 1.2s;
+    left: 0;
+    top: 100%;
+    width: 100%;
+    height: 50%;
+    background-color: var(--middle-section);
 }
 
-#logo path:nth-child(-n+3){
-    stroke-dasharray: 700px; 
-    stroke-dashoffset: 700px;
-    animation: line-anim 2s ease forwards;
+span{
+    font-family: pacifico;
+    color: white;
+    font-size: 4.0em;
+    padding: 0;
 }
 
-#logo path:nth-child(n+4) {
-    stroke-dasharray: 700px;
-    stroke-dashoffset: 700px;
-    animation: line-anim 2s ease forwards 0.3s;
-}
-#logo path:nth-child(n+7) {
-    stroke-dasharray: 700px;
-    stroke-dashoffset: 700px;
-    animation: line-anim 2s ease forwards 0.6s;
-}
-
-.content-container{
-    background-color: grey;
-    width:100vw;
-    height:60vh;
+.bottom-section {
     position: absolute;
-    left:0;
-    bottom:0;
-    z-index: 0;
-    animation: live 0.5s ease forwards 4s;
-    opacity: 0%;
-    display: grid;
-    grid-template-columns: auto auto auto auto auto;
-  
+    left: 0;
+    top: 150%;
+    width: 100%;
+    height: 50%;
+    background-color: var(--bottom-section);
 }
 
-.icon-container{
-    width:5vw;
-    height:5vh;
-    margin-left: 1vw;
-    margin-top: 12vh;
-}
-
-.icons {
-    width: 15vw;
-    height: 15vh;
-    padding: 12px 20px;
-    transform: translate(0%,-50%);
-}
-/*Find a solution for this*/
-a:hover path:nth-child(1){
-   animation: fill 1s ease forwards;
-}
-
-
-@media only screen and (max-width: 600px) {
-    
-    body{
-        animation-delay: 3.9s;
-        animation-duration: 1.7s;
-        overflow-x:hidden;
-    }
-    
-    .title-container {
-        height: 20vh;
-        top:35%;
-    }
-    #logo{
-        width:70%;
-        height:70%;
-    }
-    .content-container {
-        grid-template-columns: auto auto;
-    }
-    .icon-container {
-        margin-top: 0;
-        margin-left: 12vw;
-        height: 20vh;
-        transform:translateY(-35%);
-    }
-    .icons{
-        width: 20vw;
-        height: 20vh;
+@media only screen and (max-width: 700px) {
+    .title{
+       
     }
 }

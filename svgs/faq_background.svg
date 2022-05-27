@@ -1,8 +1,7 @@
 <svg width="1440" height="1024" viewBox="0 0 1440 1024" fill="none" xmlns="http://www.w3.org/2000/svg">
-<rect width="1440" height="1024" fill="#E5E5E5"/>
-<g clip-path="url(#clip0_0_1)">
+<g clip-path="url(#clip0_1_2)">
 <rect width="1440" height="1024" fill="white"/>
-<rect width="1440" height="1024" fill="#F2E9EA"/>
+<rect width="1440" height="1024" fill="#F5D5D8"/>
 <circle cx="37.5" cy="32.5" r="4" fill="#FDFBFB" stroke="white"/>
 <circle cx="389.5" cy="23.5" r="4" fill="#FDFBFB" stroke="white"/>
 <path d="M745.5 14C745.5 16.5361 743.661 18.5 741.5 18.5C739.339 18.5 737.5 16.5361 737.5 14C737.5 11.4639 739.339 9.5 741.5 9.5C743.661 9.5 745.5 11.4639 745.5 14Z" fill="#FDFBFB" stroke="white"/>
@@ -201,7 +200,7 @@
 <path d="M1153 786L1153.54 785M1153.54 785L1164.31 765L1167.02 787L1153.9 769.5L1172 772L1153.54 785Z" stroke="white"/>
 </g>
 <defs>
-<clipPath id="clip0_0_1">
+<clipPath id="clip0_1_2">
 <rect width="1440" height="1024" fill="white"/>
 </clipPath>
 </defs>
