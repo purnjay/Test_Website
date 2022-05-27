@@ -1,9 +1,6 @@
-﻿@font-face{
-    src:url("../fonts/VSR.ttf");
-    font-family: VSR;
-}
+﻿
 @font-face {
-    src: url("../fonts/pacifico.ttf");
+    src: url("./fonts/pacifico.ttf");
     font-family: pacifico;
 }
 
