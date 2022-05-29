@@ -189,7 +189,6 @@ a:hover{
         background-image: url("./svgs/mobile_about.svg");
         display: flex;
         flex-direction: column;
-        row-gap: 20px;
         align-items: center;
         height: 150%;
     }
@@ -206,13 +205,16 @@ a:hover{
     }
 
     .about-us > p {
-        font-size: 2.1em;
+        font-size: 1.45rem;
         color: white;
-        margin: 0 0.5em;
+        margin: 0 0.2em;
     }
 
     .vl{
         display:none;
+    }
+    .people{
+        margin-top: -2em;
     }
 
     .container{
