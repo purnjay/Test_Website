@@ -85,6 +85,8 @@ a:hover{
     /*background-color: var(--middle-section);*/
     background-attachment:fixed;
     background-position:center;
+    background-size:cover;
+
     background-image: url("./svgs/about.svg");
     display: flex;
     flex-direction: row;
@@ -186,8 +188,8 @@ a:hover{
         display: flex;
         flex-direction: column;
         justify-content: start;
-        height: 150%;
-        row-gap: 20px;
+        height: 200%;
+        row-gap: 10px;
     }
     .about-us{
         background-color: transparent;
@@ -214,6 +216,9 @@ a:hover{
         font-size: 1rem;
         row-gap: 7px;
         width: 100%;
+    }
+    .people > span{
+        font-size: 2.7em;
     }
 
     .container{
