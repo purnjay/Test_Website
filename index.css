@@ -16,7 +16,7 @@
 :root {
     --top-section: #FFCDBC;
     --middle-section: #92BFB1;
-    --bottom-section: #FDDC84;
+    --bottom-section: #ff6a00;
 }
 
 * {
@@ -87,7 +87,7 @@ a:hover{
     background-position:center;
     background-size:cover;
 
-    background-image: url("./svgs/about.svg");
+    background-image: url("./svgs/about_.svg");
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
@@ -161,7 +161,7 @@ a:hover{
     row-gap: 30px;
     font-family: dancingScript;
     font-size: 1.4em;
-    border: 1px solid #4E9C81;
+    border: 1px solid var(--top-section);
     border-radius: 20px;
     color: white;
     box-shadow: rgba(0, 0, 0, 0.25) 0px 0.0625em 0.0625em, rgba(0, 0, 0, 0.25) 0px 0.125em 0.5em, rgba(255, 255, 255, 0.1) 0px 0px 0px 1px inset;
@@ -182,9 +182,23 @@ a:hover{
     background-color: var(--bottom-section);
 }
 
+.review-pane > svg{
+    width: 40%;
+    height: 40%;
+    position:absolute;
+    top:10%;
+    right:5%;
+}
+
+.leave-rev-btn > svg{
+    position: absolute;
+    bottom: 15%;
+    left: 2%;
+}
+
 @media only screen and (max-width: 700px) {
     .middle-section {
-        background-image: url("./svgs/mobile_about.svg");
+        background-image: url("./svgs/mobile_about_.svg");
         display: flex;
         flex-direction: column;
         justify-content: start;
@@ -234,4 +248,18 @@ a:hover{
         font-size: 1.1em; 
         row-gap: 17px;
     }
+
+    .review-pane > svg{
+        width: 95%;
+        height: 95%;
+        position:initial;
+        margin: 2.6em 0;
+    }
+
+    .leave-rev-btn > svg{
+        width:100%;
+        height:100%;
+        position:initial;
+    }
+
 }
