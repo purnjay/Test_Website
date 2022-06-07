@@ -242,7 +242,7 @@ a:hover{
     }
    
     .about-us > span{
-        margin: 0.2em auto;
+        margin: 0.6em auto;
     }
 
     .about-us > p {
@@ -260,6 +260,7 @@ a:hover{
     }
     .people > span{
         font-size: 2.7em;
+        color: var(--middle-section);
     }
 
     .container{
@@ -274,8 +275,13 @@ a:hover{
         height: 220px;
         font-size: 1.1em; 
         row-gap: 17px;
+        color: var(--middle-section);
     }
-
+    .faces:hover {
+        width: 170px;
+        height: 220px;
+        font-size: 1.1em;
+    }
     .review-pane > svg{
         width: 95%;
         height: 95%;
