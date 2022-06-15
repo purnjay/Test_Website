@@ -73,7 +73,7 @@ ul{
 
 a{
     text-decoration:none;
-    color: grey;
+    color: whitesmoke;
     font-family: pacifico;
     transition: 0.4s;
 }
@@ -99,99 +99,8 @@ a:hover{
     top: 100%;
     width: 100%;
     height: 110%;
-   /* background-color: var(--middle-section);*/
-
-    background-image: url("./svgs/about_us.svg");
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    align-items: center;
 }
 
-.about-us, .people {
-    width: 40%;
-    height: 80%;
-}
-
-.about-us {
-    display: flex;
-    flex-direction: column;
-    justify-content: start;
-    row-gap: 50px;
-    align-items: center;
-    word-break: normal;
-    font-family: lobster;
-    color: #AB87FF;
-
-}
-
-.about-us > span {
-    font-size: 3.5em;
-}
-
-.about-us > p {
-    font-size: 2.2em;
-    margin: 0 0.5em;
-}
-
-.vl {
-    width: 0;
-    border-left: 3px solid transparent;
-    height: 80%;
-}
-
-.people {
-    display: flex;
-    flex-direction: column;
-    justify-content: start;
-    row-gap: 25px;
-    align-items: center;
-    word-break: normal;
-    font-family: lobster;
-}
-
-
-.people > span {
-    font-size: 3.5em;
-    color: white;
-}
-
-.container{
-    width: 95%;
-    height: 90%;
-    display: grid;
-    grid-template-columns: auto auto;
-    justify-content:center;
-    column-gap: 100px;
-}
-
-.faces {
-    width: 270px;
-    height: 340px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    row-gap: 30px;
-    font-family: dancingScript;
-    font-size: 1.4em;
-    border: 1px solid var(--top-section);
-    border-radius: 20px;
-    color: white;
-    box-shadow: rgba(0, 0, 0, 0.25) 0px 0.0625em 0.0625em, rgba(0, 0, 0, 0.25) 0px 0.125em 0.5em, rgba(255, 255, 255, 0.1) 0px 0px 0px 1px inset;
-    transition: 0.2s;
-}
-
-.faces > img{
-    border-radius: 50%;
-    width: 70%;
-}
-
-.faces:hover {
-    width: 300px;
-    height: 380px;
-    font-size: 1.9em;
-}
 
 .bottom-section {
     position: absolute;
@@ -226,67 +135,14 @@ a:hover{
         color:white;
     }
     .middle-section {
-        background-image: url("./svgs/mobile_about_us.svg");
-        display: flex;
-        flex-direction: column;
-        justify-content: start;
-        height: 200%;
-        row-gap: 10px;
+       
     }
-    .about-us{
-        background-color: transparent;
-        width: 100%;
-        height: max-content;
-        font-size: 0.7em;
-        row-gap: 5px;
-    }
-   
-    .about-us > span{
-        margin: 0.6em auto;
-    }
-
-    .about-us > p {
-        font-size: 1.20rem;
-        margin: 0 0.2em;
-    }
-
-    .vl{
-        display:none;
-    }
-    .people{
-        font-size: 1rem;
-        row-gap: 7px;
-        width: 100%;
-    }
-    .people > span{
-        font-size: 2.7em;
-        color: var(--middle-section);
-    }
-
-    .container{
-        grid-template-columns: auto auto;
-        width: 100%;
-        height: 500px;
-        column-gap: 50px;
-    }
-
-    .faces {
-        width: 170px;
-        height: 220px;
-        font-size: 1.1em; 
-        row-gap: 17px;
-        color: var(--middle-section);
-    }
-    .faces:hover {
-        width: 170px;
-        height: 220px;
-        font-size: 1.1em;
-    }
+ 
     .review-pane > svg{
         width: 95%;
         height: 95%;
-        position:initial;
-        margin: 2.6em 0;
+        position:relative;
+        left: 3%;
     }
 
     .leave-rev-btn > svg{
