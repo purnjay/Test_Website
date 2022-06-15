@@ -50,7 +50,7 @@ body{
     /*background-image: url("back.jpg");*/
     background-color: var(--top-section);
     background-repeat: no-repeat;
-    background-image: linear-gradient(to right top, #b3b7ee, #adb0e9, #a7aae4, #a1a3df, #9b9dda, #9a9cd6, #989ad1, #9799cd, #9a9cc9, #9d9ec4, #9fa1c0, #a2a3bb);
+    background-image: linear-gradient(to right top, #d16ba5, #c777b9, #ba83ca, #aa8fd8, #9a9ae1, #8aa7ec, #79b3f4, #69bff8, #52cffe, #41dfff, #46eefa, #5ffbf1);
     background-size: 400% 400%;
     animation: background-gradient 7s ease infinite;
 }
