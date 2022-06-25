@@ -243,16 +243,17 @@ h2{
         color: white;
     }
     .text-container{
-        width:100vw;
+        width:100%;
     }
     .text-container > svg{
-        width:85%;
+        width:90%;
     }
 
     .text-container > button{
         width: 30vw;
         font-size: 3.5vw;
         font-family:Rockwell;
+        text-align:center;
     }
     .text-container > button:active {
         color: var(--middle-section);
