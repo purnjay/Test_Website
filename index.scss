@@ -23,31 +23,6 @@
     }
 }
 
-@keyframes clouds-moving {
-    from {
-        background-position: 0px 30px, 0px 0px;
-    }
-
-    to {
-        background-position: -5500px 30px, 0px 0px;
-    }
-}
-@keyframes shake_mount{
-    0% {
-        background-position: initial, 0px 0px;
-    }
-
-    50% {
-        background-position: initial, 0px 5px;
-    }
-
-    100% {
-        background-position: initial, 0px 0px;
-    }
-}
-
-
-
 :root {
     --top-section: #FF6961;
     --middle-section: /*#92BFB1,*/ #AB87FF;
@@ -58,13 +33,13 @@
     box-sizing:border-box;
 }
 
-body {
-    width: 100vw;
-    height: 100vh;
+html, body {
+    height: 100%;
     margin: 0px;
+    scroll-behavior: smooth;
 }
 .container {
-    width: 100%;
+    width: 100vw;
     height: 100%;
     scroll-snap-type: y mandatory;
     overflow-y: scroll;
@@ -83,21 +58,12 @@ body {
     scroll-snap-align: start;
 }
 
-.top-section > svg{
-    z-index: 1;
-}
-
 .middle-section {
     height: 100%;
     width: 100%;
     background-color: var(--top-section);
     scroll-snap-align: start;
-    background-image: url("./svgs/clouds.jpg"), url("./svgs/cld.jpg");
-    background-position: 0px 30px, 0px 0px;
-    background-repeat: repeat-x, no-repeat;
-    animation: clouds-moving 100s linear infinite, shake_mount 5s ease infinite;
 }
-
 
 h1 {
     font-family: pacifico;
@@ -110,14 +76,14 @@ h1 {
 }
 .info-container {
     position: relative;
-    top: 3%;
+    top: 1%;
     height: 80%;
     width: 85%;
     /*background-color: red;*/
     margin: auto;
     display:flex;
     flex-direction:column;
-    row-gap:65px;
+    row-gap:30px;
 }
 .faces-container{
     width: 80%;
@@ -127,7 +93,7 @@ h1 {
     display:flex;
     flex-direction:row;
     justify-content:space-evenly;
-    column-gap:0px;
+    column-gap:50px;
 }
 
 
@@ -139,10 +105,11 @@ h1 {
     flex-direction: column;
     justify-content: space-evenly;
     align-items: center;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
     text-shadow: 0px 1px 0px rgba(255,255,255,.3), 0px -1px 0px rgba(0,0,0,.7);
-    border-radius: 20px;
-    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
-    backdrop-filter: blur(5px)
+    border-radius: 16px;
+    backdrop-filter: blur(5.3px);
+    -webkit-backdrop-filter: blur(5.3px);
 }
 
 .cards > img{
@@ -150,16 +117,31 @@ h1 {
     border-radius: 50%;
 }
 
-h2 {
+#first_card {
+    /* background-image: linear-gradient(to right top, #d16ba5, #d674a9, #db7eac, #e087b1, #e590b5, 
+        #e490bb, #e291c2, #e092c9, #d08dd6, #b88ce4, #968df1, #5f8ffb);
+    */
+    background-image:url("./svgs/first_card.svg");
+    background-size:100%;
+}
+#second_card {
+    background-image: url("./svgs/first_card.svg");
+    background-size: 100%;
+}
+#third_card {
+    background-image: url("./svgs/first_card.svg");
+    background-size: 100%;
+}
+
+h2{
     font-size: 1.85em;
-    font-family: dancingScript;
-    text-shadow: 4px 4px #aaabad;
+    font-family:dancingScript;
     color: white;
 }
 
 .para-container {
     /*background-color:green;*/
-    height: 38%;
+    height: 40%;
     width: 100%;
     text-align: center;
 }
@@ -168,7 +150,7 @@ h2 {
     font-size: 1.7vw;
     font-family: pacifico;
     color: white;
-    text-shadow: 4px 4px rgba(255,255,255,.2);
+    text-shadow: 0px 1px 0px rgba(255,255,255,.3), 0px -1px 0px rgba(0,0,0,.7);
 }
 
 .middle-section-two {
@@ -223,46 +205,40 @@ h2 {
         color:white;
     }
 
-    .middle-section{
-        background-image: url("./svgs/clouds_mobile.jpg"), url("./svgs/BAU_mobile.svg");
-        width: 100vw;
-    }
-
     h1 {
-        font-size: 2.5em;
+        font-size: 2em;
         padding: 20px 20px;
     }
     .info-container {
         width: 100%;
-        top: 3%;
-        height: calc(100vh / 1.35);
-        row-gap: 0px;
-        
+        top: 0%;
+        height: 80%;
+        row-gap: 40px;
     }
     .faces-container {
         width: 100%;
         height: 60%;
         flex-wrap:wrap;
-        column-gap:20px;
+        column-gap:50px;
+        row-gap: 20px;
     }
     .cards {
-        height: calc(100vh / 3.5);
-        width: calc(100vw / 2.5);
+        height: 160px;
+        width: 110px;
         min-width: 50px;
     }
     .cards > img {
         width: 70%;
     }
     h2{
-        font-size: 1.05em;
+        font-size: 0.85em;
     }
     .para-container {
-        height: max-content;
-        width: 100vw;
+        height: 40%;
     }
 
     .para-container > p {
-        font-size: 1.05em;
+        font-size: 0.85em;
         font-family: pacifico;
         color: white;
     }
