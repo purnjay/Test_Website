@@ -106,7 +106,7 @@ h1 {
     padding: 12px 20px;
     color: white;
     text-align: center;
-    text-shadow: 4px 4px #aaabad;
+    text-shadow: 4px 4px #E0AFC3;
 }
 .info-container {
     position: relative;
@@ -144,7 +144,7 @@ h1 {
     box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
     backdrop-filter: blur(5px);
     -webkit-backdrop-filter: blur(5px);
-    
+    background-color: rgba(187,187,223,.5);
 }
 
 .cards > img{
@@ -155,7 +155,7 @@ h1 {
 h2 {
     font-size: 1.85em;
     font-family: dancingScript;
-    text-shadow: 4px 4px #aaabad;
+    text-shadow: 4px 4px #E0AFC3;
     color: white;
 }
 
@@ -166,12 +166,12 @@ h2 {
     text-align: center;
 }
 
-.para-container > p {
-    font-size: 1.7vw;
-    font-family: pacifico;
-    color: white;
-    text-shadow: 4px 4px rgba(255,255,255,.2);
-}
+    .para-container > p {
+        font-size: 1.7vw;
+        font-family: pacifico;
+        color: white;
+        text-shadow: 4px 4px #E0AFC3;
+    }
 
 .middle-section-two {
     background-color: var(--middle-section);
@@ -253,7 +253,7 @@ h2 {
         min-width: 50px;
     }
     .cards > img {
-        width: 70%;
+        width: 65%;
     }
     h2{
         font-size: 1.05em;
